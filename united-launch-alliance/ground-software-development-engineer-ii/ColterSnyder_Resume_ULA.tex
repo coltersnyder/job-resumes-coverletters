@@ -1,0 +1,144 @@
+%-------------------------------------------------------------------------------
+% Colter Snyder -- Resume, tailored for ULA Ground Software Development Engineer 2
+% Build: latexmk -pdf -outdir=build ColterSnyder_Resume_ULA.tex
+% Single-column, ATS-friendly layout (text is selectable and parses in order).
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.55in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F5FA8}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedright
+
+% Make the PDF text map cleanly for applicant tracking systems
+\pdfgentounicode=1
+
+% Section headings: uppercase, accent color, rule underneath
+\titleformat{\section}
+  {\color{accent}\normalsize\bfseries}{}{0em}{\MakeUppercase}[\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+% Bullet lists
+\setlist[itemize]{leftmargin=1.1em, itemsep=0.5pt, parsep=0pt, topsep=1pt, label=\textbullet}
+
+%--- Helper commands -----------------------------------------------------------
+% \entry{Organization}{Location}{Title}{Dates}
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{\small #4} \\
+  \end{tabularx}\vspace{-2pt}%
+}
+% \subentry{Title}{Dates} -- additional role at the same organization
+\newcommand{\subentry}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textit{#1} & \textit{\small #2} \\
+  \end{tabularx}\vspace{-2pt}%
+}
+% \skillrow{Category}{Items}
+\newcommand{\skillrow}[2]{\textbf{#1:} #2\par\vspace{1pt}}
+
+%===============================================================================
+\begin{document}
+
+%--- Header --------------------------------------------------------------------
+\begin{center}
+  {\Huge\bfseries Colter Snyder}\par\vspace{4pt}
+  \small
+  Lakewood, CO \enspace$\cdot$\enspace U.S. Citizen \enspace$\cdot$\enspace
+  \faPhone*\ (720) 626-2558 \enspace$\cdot$\enspace
+  \faEnvelope\ \href{mailto:coltersnyder@gmail.com}{coltersnyder@gmail.com} \enspace$\cdot$\enspace
+  \faLinkedin\ \href{https://www.linkedin.com/in/colter-snyder-a36854183/}{in/colter-snyder-a36854183}
+\end{center}
+
+%--- Summary -------------------------------------------------------------------
+\section{Summary}
+Software engineer with two years of hands-on development on mission-critical defense simulation
+software in ITAR- and CUI-controlled environments. Works across the full software lifecycle in Python,
+Rust, and C++ on Linux, using GitLab CI/CD, test-driven development, and agile practices, and uses
+AI-assisted tools (Claude Code, Cursor) within export-control limits. M.S.\ in Computer Science (3.97 GPA); former adjunct
+instructor to more than 200 students; hobbyist in FPGA design and 6502/Z80 assembly.
+
+%--- Experience ----------------------------------------------------------------
+\section{Experience}
+
+\entry{Innovative Scientific Solutions, Inc.}{}{Software Engineer II}{Dec 2024 -- Present}
+\begin{itemize}
+  \item Develop ITAR- and CUI-controlled platforms for probabilistic nuclear weapons effects simulation, covering
+        blast, neutron radiation, thermal fluence, ground shock, cratering, and X-ray effects,
+        for defense and allied government agencies.
+  \item Work across the full lifecycle on a 4--5 person agile team: refine requirements, write object-oriented
+        designs, UML diagrams (StarUML), and design documentation, implement features, and verify them with automated tests.
+  \item Port legacy physics models from Fortran and Python to Rust, preserving their numerical behavior.
+  \item Build Python (Flask) and Rust back-end services with WebSocket communication and MongoDB, deployed
+        with Docker in Linux environments.
+  \item Spearheaded an internal Python performance-benchmarking tool, a CLI with a GUI front end, that benchmarks
+        our calculation services by individual and combined effect and charts the results.
+  \item Maintain code quality with Git, GitLab CI/CD, and SonarQube; build interfaces in Angular, TypeScript, and Tauri.
+  \item Apply AI-assisted tools (Claude Code, Cursor) only to non-CUI, non-ITAR idea exploration and research,
+        keeping all controlled code and data out of commercial AI services.
+\end{itemize}
+
+\entry{Tyler Technologies}{Lakewood, CO}{Software Development Intern}{May 2023 -- Aug 2023}
+\begin{itemize}
+  \item Overhauled a 2,000-test automated suite, restoring about 1,500 tests (75\%) to passing and giving the
+        team a reliable foundation for test-driven development.
+  \item Migrated a major legacy VB6 desktop application to object-oriented C\# on an agile cloud modernization team.
+\end{itemize}
+
+\entry{Colorado School of Mines}{Golden, CO}{Postgraduate Research Assistant, Department of Computer Science}{May 2024 -- Dec 2024}
+\begin{itemize}
+  \item Developed object detection models for common semiconductor cleanroom equipment and integrated them,
+        with Python back-end services, into a Unity AR training app, delivering a working demo in collaboration
+        with the University of Arizona (advisor: Dr.\ Mehmet Belviranli).
+\end{itemize}
+
+\subentry{Undergraduate Research Fellow}{Sep 2020 -- Apr 2021}
+\begin{itemize}
+  \item Designed and built the front end and back end of a collaborative VR environment for engineering education;
+        co-authored \textit{Collaborative Environment for Education in VR} for a Mines research conference (2021).
+\end{itemize}
+
+%--- Teaching ------------------------------------------------------------------
+\section{Teaching \& Mentoring}
+
+\entry{Colorado School of Mines}{Golden, CO}{Adjunct Professor, Department of Computer Science}{Jan 2023 -- Dec 2023}
+\begin{itemize}
+  \item Co-taught CSCI 220: Data Structures and Algorithms (C++) to 120 undergraduates, coaching students on
+        object-oriented design, debugging, and algorithmic problem solving (Fall 2023).
+  \item Taught a section of CSCI 102: Intro to Computer Science Lab (Python) to 90 undergraduates (Spring 2023).
+\end{itemize}
+
+%--- Skills --------------------------------------------------------------------
+\section{Skills}
+\skillrow{Languages}{Python, C++, Rust, C\#, Fortran, TypeScript, JavaScript, SQL}
+\skillrow{Practices}{Object-Oriented Design, UML, Requirements \& Design Documentation, Agile/Scrum, Test-Driven Development, CI/CD}
+\skillrow{Tools}{Linux, Git, GitLab CI/CD, SonarQube, Docker, StarUML, MongoDB, Angular, Tauri, Claude Code, Cursor}
+\skillrow{Personal Hardware Projects}{FPGA design (Verilog), 6502 \& Z80 assembly programming, CAD/3D printing}
+
+%--- Education -----------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Colorado School of Mines} & Golden, CO \\
+  \textit{Master of Engineering in Nuclear Engineering (in progress)} & \textit{\small Aug 2026 -- Expected May 2031} \\
+  \textit{Master of Science in Computer Science \textbullet\ GPA 3.97} & \textit{\small Jan 2022 -- May 2024} \\
+  \textit{Bachelor of Science in Computer Science \textbullet\ Magna Cum Laude \textbullet\ GPA 3.77} & \textit{\small Aug 2019 -- Dec 2022} \\
+\end{tabularx}
+\vspace{1pt}
+\skillrow{Relevant coursework}{Computer Graphics \& Advanced Computer Graphics (C++), Cyber-Physical Systems Security}
+\skillrow{Certification}{CAE-CDE Certificate, NSA/DHS National Center of Academic Excellence in Cyber Defense Education}
+\skillrow{Honors}{CACI C-MAPP Scholar, National Merit Scholar, Dean's List, Eagle Scout, Rotary Youth Leadership Award}
+
+\end{document}

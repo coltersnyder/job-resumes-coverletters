@@ -1,0 +1,83 @@
+%-------------------------------------------------------------------------------
+% Colter Snyder -- Cover letter, ULA Ground Software Development Engineer 2 (Req. 2251)
+% Build: latexmk -pdf -outdir=build ColterSnyder_CoverLetter_ULA.tex
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.8in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F5FA8}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\pdfgentounicode=1
+
+\begin{document}
+
+%--- Header (matches resume) ---------------------------------------------------
+\begin{center}
+  {\Huge\bfseries Colter Snyder}\par\vspace{4pt}
+  \footnotesize
+  Lakewood, CO \enspace$\cdot$\enspace U.S. Citizen \enspace$\cdot$\enspace
+  \faPhone*\ (720) 626-2558 \enspace$\cdot$\enspace
+  \faEnvelope\ \href{mailto:coltersnyder@gmail.com}{coltersnyder@gmail.com} \enspace$\cdot$\enspace
+  \mbox{\faLinkedin\ \href{https://www.linkedin.com/in/colter-snyder-a36854183/}{in/colter-snyder-a36854183}}
+\end{center}
+{\color{accent}\hrule height 0.6pt}
+\vspace{6pt}
+
+October 23, 2026
+
+Hiring Team\\
+United Launch Alliance\\
+Centennial, CO 80112
+
+\textbf{Re: Ground Software Development Engineer 2, Ground Software Modernization (Req.\ 2251)}
+
+Dear Hiring Team,
+
+More than 155 consecutive successful missions is a record built on software that people can trust. I
+would like to help modernize the ground systems behind that record. I am a software engineer at
+Innovative Scientific Solutions, where I develop ITAR- and CUI-controlled nuclear weapons effects
+simulation platforms for defense organizations. With an M.S.\ in Computer Science from the Colorado School of
+Mines, I would bring hands-on experience from a field where correctness is not optional.
+
+Much of my current work is modernization. I port legacy physics models from Fortran and Python to
+Rust, keeping their numerical behavior intact while making the code easier to maintain and extend.
+On a small agile team, I work across the full lifecycle: refining requirements, writing
+object-oriented designs, UML diagrams and design documentation, implementing features in Python and Rust on Linux,
+and verifying them with automated tests in GitLab CI/CD pipelines with SonarQube analysis. As an
+intern at Tyler Technologies, I migrated a legacy VB6 application to C\# and overhauled a
+2,000-test suite, restoring about 1,500 tests to passing so the team could rely on test-driven
+development again.
+
+I am glad to see ULA embracing AI-assisted development. I use tools such as Claude Code and Cursor
+regularly, and I use them with export control in mind. Commercial AI assistants send prompts and code
+to infrastructure outside an accredited boundary, so at ISSI I use them only for non-CUI, non-ITAR idea
+exploration and research, and never with controlled code or data. Bringing these tools to bear on
+controlled work calls for an authorized environment, such as models hosted through AWS Bedrock in
+GovCloud, and I would be excited to help use them productively within those boundaries at ULA.
+
+My C++ comes mainly from academia: graduate computer graphics coursework, and a semester co-teaching
+CSCI 220: Data Structures and Algorithms in C++ to 120 students. Teaching that course, and another
+section of 90, taught me how to explain technical ideas clearly and help less-experienced engineers
+grow, which is the kind of mentoring this role asks for. Outside work, I have long been drawn to the
+point where software meets hardware. I design FPGA logic in Verilog and write 6502 and Z80
+assembly, and that is a big part of why ground software, which connects code to real flight
+hardware, appeals to me.
+
+Space has fascinated me for as long as I can remember, and the chance to contribute to it here in
+Colorado, close to my home in Lakewood, is an opportunity I would be proud to take. I would welcome
+the chance to discuss how my experience in mission-critical, export-controlled software development
+can support ULA's Ground Software Modernization team. Thank you for your time and consideration.
+
+Sincerely,
+
+Colter Snyder
+
+\end{document}

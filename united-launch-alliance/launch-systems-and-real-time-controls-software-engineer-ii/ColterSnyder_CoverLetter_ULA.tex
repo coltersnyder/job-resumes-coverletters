@@ -1,0 +1,85 @@
+%-------------------------------------------------------------------------------
+% Colter Snyder -- Cover letter, ULA Launch Systems & Real-Time Controls
+% Software Engineer 2 (Req. 2255)
+% Build: latexmk -pdf -outdir=build ColterSnyder_CoverLetter_ULA.tex
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.8in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F5FA8}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\pdfgentounicode=1
+
+\begin{document}
+
+%--- Header (matches resume) ---------------------------------------------------
+\begin{center}
+  {\Huge\bfseries Colter Snyder}\par\vspace{4pt}
+  \footnotesize
+  Lakewood, CO \enspace$\cdot$\enspace U.S. Citizen \enspace$\cdot$\enspace
+  \faPhone*\ (720) 626-2558 \enspace$\cdot$\enspace
+  \faEnvelope\ \href{mailto:coltersnyder@gmail.com}{coltersnyder@gmail.com} \enspace$\cdot$\enspace
+  \mbox{\faLinkedin\ \href{https://www.linkedin.com/in/colter-snyder-a36854183/}{in/colter-snyder-a36854183}}
+\end{center}
+{\color{accent}\hrule height 0.6pt}
+\vspace{6pt}
+
+October 23, 2026
+
+Hiring Team\\
+United Launch Alliance\\
+Centennial, CO 80112
+
+\textbf{Re: Launch Systems \& Real-Time Controls Software Engineer 2, Ground Software Fluids (Req.\ 2255)}
+
+Dear Hiring Team,
+
+Before a ULA rocket flies, software has to load it with cryogenic propellant safely and on time,
+through manufacturing, preflight test, and countdown. I would like to help write and maintain that
+software. I am a software engineer at Innovative Scientific Solutions, where I develop ITAR- and
+CUI-controlled nuclear weapons effects simulation platforms for defense organizations. I hold an
+M.S.\ in Computer Science from the Colorado School of Mines, and I would bring two years of
+experience building software whose results people rely on.
+
+At ISSI I work across the full lifecycle on a small agile team and have led development of several
+parts of our codebase. I refine requirements, design object-oriented architectures, document them in
+UML and design documents, implement features in Python and Rust on Linux, and verify them with
+automated tests in GitLab CI/CD with SonarQube analysis. I spearheaded our internal
+performance-benchmarking tool, a Python command-line application with a GUI front end that drives our
+calculation services effect by effect, alone and in combination, and charts the results. Much of my work is porting legacy physics
+models from Fortran and Python to Rust without changing their numerical behavior. Both have taught
+me to treat every change as something that must be measured and proven correct, not just made to
+compile.
+
+What draws me to this role in particular is where software meets hardware. Outside work I program
+in C, design FPGA logic in Verilog, and write 6502 and Z80 assembly, where timing and the physical behavior of the
+hardware matter as much as the code. My graduate coursework in cyber-physical systems security and
+IoT security focused on how software that commands physical equipment can fail or be attacked, and
+how to design against that. Commanding propulsion and electrical ground support equipment under hard
+real-time requirements is the professional version of the problems I seek out on my own time, and I
+am eager to deepen my work in C++ and real-time Linux on systems where it counts.
+
+The role also calls for presenting designs and working closely with a range of stakeholders. At ISSI
+I take part in technical meetings with our government customers, and I co-taught CSCI 220: Data
+Structures and Algorithms in C++ to 120 students and taught another section of 90. Teaching taught me
+to explain technical designs clearly to audiences with very different backgrounds. I am comfortable with a fail-fast culture: I would rather find a problem on
+my bench or in a test run than on the pad.
+
+Space has fascinated me for as long as I can remember, and contributing to ULA's record of mission
+success here in Colorado, close to my home in Lakewood, is an opportunity I would be proud to take.
+I would welcome the chance to discuss how I can support the Ground Software Fluids team. Thank you
+for your time and consideration.
+
+Sincerely,
+
+Colter Snyder
+
+\end{document}

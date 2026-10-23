@@ -1,0 +1,75 @@
+%-------------------------------------------------------------------------------
+% Colter Snyder -- Cover letter, Google Software Engineer III, Infrastructure,
+% Platforms Infrastructure Engineering
+% Build: latexmk -pdf -outdir=build ColterSnyder_CoverLetter_Google_SWE3_Infra.tex
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[margin=0.8in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F5FA8}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\pdfgentounicode=1
+
+\begin{document}
+
+%--- Header (matches resume) ---------------------------------------------------
+\begin{center}
+  {\Huge\bfseries Colter Snyder}\par\vspace{4pt}
+  \footnotesize
+  Lakewood, CO \enspace$\cdot$\enspace
+  \faPhone*\ (720) 626-2558 \enspace$\cdot$\enspace
+  \faEnvelope\ \href{mailto:coltersnyder@gmail.com}{coltersnyder@gmail.com} \enspace$\cdot$\enspace
+  \mbox{\faLinkedin\ \href{https://www.linkedin.com/in/colter-snyder-a36854183/}{in/colter-snyder-a36854183}}
+\end{center}
+{\color{accent}\hrule height 0.6pt}
+\vspace{6pt}
+
+October 23, 2026
+
+Hiring Team\\
+Google
+
+\textbf{Re: Software Engineer III, Infrastructure, Platforms Infrastructure Engineering}
+
+Dear Hiring Team,
+
+The infrastructure behind Google's AI and compute platforms spans everything from service code to
+TPUs, and that full stack is exactly the range I enjoy working across. I am a software engineer at
+Innovative Scientific Solutions, where I build back-end calculation services for simulation platforms
+used by defense agencies. I hold an M.S.\ in Computer Science from the Colorado School of Mines, and I
+would like to bring my experience with services, performance, and hardware to Platforms
+Infrastructure Engineering.
+
+At ISSI I build Rust and Python services that communicate over WebSockets, store data in MongoDB, and
+deploy in Docker containers on Linux. When the team needed to understand how those services performed,
+I spearheaded an internal benchmarking tool in Python, first as a command-line application and then
+with a GUI front end. It runs any combination of our 13 effect calculations and charts the results,
+and it exposed a tenfold slowdown in our interface to an external library, with graphs clear enough to
+take straight to leadership. It also saved what would likely have been weeks of manual testing with
+hand-written JSON inputs. Beyond performance work, I port legacy physics
+models from Fortran and Python to Rust while preserving their numerical behavior, and I lead development of
+individual features from design documents through automated tests. I review teammates' merge
+requests regularly, since every change requires a separate reviewer and merger.
+
+My interest in infrastructure goes below the operating system. In my own time I design FPGA logic in
+Verilog, program in C, and write 6502 and Z80 assembly, which has given me a working sense of how
+software meets compute hardware. I have also co-taught Data Structures and Algorithms in C++ to 120
+students, and diagnosing a 2,000-test suite during my Tyler Technologies internship, where I restored
+about 1,500 tests to passing, taught me to track problems to their source rather than their symptoms.
+
+I am eager to grow into larger-scale distributed systems, and I can think of no better place to do it
+than the team building Google's computing foundation. I live in Lakewood and would be glad to work from Google's Boulder office or remotely. Thank you for your time and consideration.
+
+Sincerely,
+
+Colter Snyder
+
+\end{document}
